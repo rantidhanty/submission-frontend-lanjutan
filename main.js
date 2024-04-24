@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           <p>Tahun Terbit: ${book.year}</p>
           <div class="action">
               <button class="read-button">${
-                book.isComplete ? "belum selesai di baca" : "selesai dibaca"
+                book.isComplete ? "Belum selesai dibaca" : "Selesai dibaca"
               }</button>
               <button class="delete">Hapus Buku </button>
           </div>
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         readButton.classList.add("green");
         inCompleteBookshelfList.appendChild(article);
       } else {
-        readButton.innerText = "Belum Selesai dibaca";
+        readButton.innerText = "Belum selesai dibaca";
         readButton.classList.remove("green");
         readButton.classList.add("yellow");
         completeBookshelfList.appendChild(article);
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           .querySelector("p:nth-of-type(2)")
           .innerText.split(": ")[1];
         const isComplete =
-          item.querySelector(".read-button").innerText === "Belum Selesai dibaca";
+          item.querySelector(".read-button").innerText === "Belum selesai dibaca";
         const book = {
             id: id,
           title: title,
