@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
     function toggleReadStatus(article) {
       const readButton = article.querySelector(".read-button");
-      const isComplete = readButton.innerText === "Belum Selesai dibaca";
+      const isComplete = readButton.innerText === "Belum selesai dibaca";
   
       if (isComplete) {
         readButton.innerText = "Selesai dibaca";
